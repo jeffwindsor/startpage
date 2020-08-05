@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <div style="right: 50%; bottom: 50%; transform: translate(50%, 50%); position: absolute;">
+        <div style="display: flex">
+            <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="startpage" autofocus style="text-align: left;"/>
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="google" autofocus style="text-align: center;"/>
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action=" https://stackoverflow.com/search?q="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="stack" autofocus style="text-align: right;"/>
+            </form>
+        </div>
+        <p style="color: var(--aurora1);">
+            (<a target="_blank" href="http://cjurl.me/empire-board">jira</a>)
+            (<a target="_blank" href="http://cjurl.me/empire">pad</a>)
+            (<a target="_blank" href="http://cjurl.me/wipeout">wout</a>)
+            (<a target="_blank" href="http://cjurl.me/audit">audt</a>)
+            (<a target="_blank" href="http://cjurl.me/empire-gitlab">lab</a>)
+            (<a target="_blank" href="http://cjurl.me/empire-jenkins">jnk</a>)
+            (<a target="_blank" href="http://cjurl.me/pagerduty">pdty</a>)
+        </p>
+        <p style="color: var(--aurora2)">
+            (<a target="_blank" href="https://engineering.cj.com">work</a>)
+            (<a target="_blank" href="http://cjurl.me/empire">wiki</a>)
+            (<a target="_blank" href="http://cjurl.me/burn">burn</a>)
+            (<a target="_blank" href="http://cjurl.me/timesheet">time</a>)
+            (<a target="_blank" href="http://cjurl.me/lionbox">box</a>)
+            (<a target="_blank" href="http://cjurl.me/publicis-support">sup</a>)
+        </p>
+        <p style="color: var(--aurora3)">
+            (<a target="_blank" href="https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html">cdk</a>)
+            (<a target="_blank" href="https://www.clojure.org/guides/getting_started">clj</a>)
+            (<a target="_blank" href="https://www.rust-lang.org/learn">rs</a>)
+            (<a target="_blank" href="https://hoogle.haskell.org/">hs</a>)
+            (<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">js</a>)
+            (<a target="_blank" href="https://golang.org/doc/">go</a>)
+            (<a target="_blank" href="https://www.python.org/doc/">py</a>)
+        </p>
+        <p style="color: var(--aurora4)">
+            (<a target="_blank" href="https://reddit.com/">red</a>)
+            (<a target="_blank" href="https://youtube.com">you</a>)
+            (<a target="_blank" href="https://watchnebula.com/">neb</a>)
+            (<a target="_blank" href="https://curiositystream.com/">cur</a>)
+            (<a target="_blank" href="https://www.coursera.org/">crsa</a>)
+            (<a target="_blank" href="https://www.hackerrank.com/domains">hrnk</a>)
+            (<a target="_blank" href="https://exercism.io/">xrsm</a>)
+        </p>
+        <p style="color: var(--aurora5)">
+            (<a target="_blank" href="https://gmail.com">mail</a>)
+            (<a target="_blank" href="https://drive.google.com/drive/my-drive">gdrv</a>)
+            (<a target="_blank" href="https://mega.nz/">mega</a>)
+            (<a target="_blank" href="https://www.amazon.com/">amaz</a>)
+            (<a target="_blank" href="https://www.netflix.com/">ntfx</a>)
+        </p>
+        <div style="display: flex">
+            <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="hoogle" autofocus style="text-align: left;"/>
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action="http://clojuredocs.org/search?q="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="clojure" autofocus style="text-align: center;"/>
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="mdn" autofocus style="text-align: right;"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<style type="text/css" media="screen">
+    * {
+        font-size: 22px;
+        font-family: monospace;
+        text-align: center;
+    }
+
+    html {
+        background-color: var(--polar1);
+    }
+
+    a { text-decoration: none; }
+    a:link, a:visited { color: var(--snow1); }
+    a:hover { color: inherit; }
+
+    input {
+        border: none;
+        background: none;
+        color: var(--frost4);
+    }
+    input:focus { outline: none;}
+
+    /* Nord Color Scheme */
+    :root {
+        --polar1: #2e3440;
+        --polar2: #3b4252;
+        --polar3: #434c5e;
+        --polar4: #4c566a;
+        --snow1: #d8dee9;
+        --snow2: #e5e9f0;
+        --snow3: #eceff4;
+        --frost1: #8fbcbb;
+        --frost2: #88c0d0;
+        --frost3: #81a1c1;
+        --frost4: #5e81ac;
+        --aurora1: #BF616A;
+        --aurora2: #D08770;
+        --aurora3: #EBCB8B;
+        --aurora4: #A3BE8C;
+        --aurora5: #B48EAD;
+    }
+
+</style>
