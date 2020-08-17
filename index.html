@@ -7,19 +7,19 @@
 </head>
 
 <body>
-    <div style="right: 50%; bottom: 50%; transform: translate(50%, 50%); position: absolute;">
+    <div style="right: 50%; bottom: 50%; transform: translate(50%, 50%); position: absolute; width:750px;">
         <div style="display: flex">
             <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="startpage" autofocus style="text-align: left;"/>
+                <input type="text" name="q" placeholder="startpage" autofocus />
             </form>
             <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="google" autofocus style="text-align: center;"/>
+                <input type="text" name="q" placeholder="google" autofocus />
             </form>
             <form class="SearchForm" target="_blank" method="get" action=" https://stackoverflow.com/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="stack" autofocus style="text-align: right;"/>
+                <input type="text" name="q" placeholder="stack" autofocus />
             </form>
         </div>
         <p style="color: var(--aurora1);">
@@ -63,7 +63,7 @@
             (<a target="_blank" href="https://www.netflix.com/">ntfx</a>)
             (<a target="_blank" href="https://www.khanacademy.org/">khan</a>)
         </p>
-        <p style="color: var(--aurora4)">
+        <p style="color: var(--aurora1)">
             (<a target="_blank" href="https://developers.google.com/machine-learning/crash-course">mlcc</a>)
             (<a target="_blank" href="https://ai.google/education/">ml-g</a>)
             (<a target="_blank" href="https://aischool.microsoft.com/en-us/home">ai-m</a>)
@@ -75,15 +75,15 @@
         <div style="display: flex">
             <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="hoogle" autofocus style="text-align: left;"/>
+                <input type="text" name="q" placeholder="hoogle" autofocus />
             </form>
             <form class="SearchForm" target="_blank" method="get" action="http://clojuredocs.org/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="clojure" autofocus style="text-align: center;"/>
+                <input type="text" name="q" placeholder="clojure" autofocus />
             </form>
             <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="mdn" autofocus style="text-align: right;"/>
+                <input type="text" name="q" placeholder="mdn" autofocus />
             </form>
         </div>
     </div>
@@ -93,7 +93,6 @@
     * {
         font-size: 22px;
         font-family: monospace;
-        text-align: center;
     }
 
     html {
