@@ -8,7 +8,7 @@
 
 <body>
     <div style="right: 50%; bottom: 50%; transform: translate(50%, 50%); position: absolute; width:750px;">
-        <div style="display: flex">
+        <div style="display: flex;">
             <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
                 <input type="text" name="q" placeholder="startpage" autofocus />
@@ -19,11 +19,27 @@
             </form>
             <form class="SearchForm" target="_blank" method="get" action=" https://stackoverflow.com/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="stack" autofocus />
+                <input type="text" name="q" placeholder="stackover" autofocus />
+            </form>
+        </div>
+        <BR/>
+        <div style="display: flex;">
+            <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="hoogle" autofocus />
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action="http://clojuredocs.org/search?q="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="clojure" autofocus />
+            </form>
+            <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
+                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                <input type="text" name="q" placeholder="mdn" autofocus />
             </form>
         </div>
         <p style="color: var(--aurora1);">
             (<a target="_blank" href="http://cjurl.me/empire-board">jira</a>)
+            (<a target="_blank" href="https://outlook.office365.com/">omail</a>)
             (<a target="_blank" href="http://cjurl.me/empire">pad</a>)
             (<a target="_blank" href="http://cjurl.me/wipeout">wout</a>)
             (<a target="_blank" href="http://cjurl.me/audit">audt</a>)
@@ -72,20 +88,7 @@
             (<a target="_blank" href="https://www.hackerrank.com/domains">hrnk</a>)
             (<a target="_blank" href="https://exercism.io/">xrsm</a>)
         </p>
-        <div style="display: flex">
-            <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="hoogle" autofocus />
-            </form>
-            <form class="SearchForm" target="_blank" method="get" action="http://clojuredocs.org/search?q="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="clojure" autofocus />
-            </form>
-            <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="mdn" autofocus />
-            </form>
-        </div>
+
     </div>
 </body>
 </html>
@@ -106,9 +109,11 @@
     input {
         border: none;
         background: none;
-        color: var(--frost4);
+        color: var(--polar4);
     }
-    input:focus { outline: none;}
+    input:focus {
+        outline: none;
+    }
 
     /* Nord Color Scheme */
     :root {
