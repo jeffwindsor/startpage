@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- influenced by: https://github.com/JLErvin/startpage -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
 </head>
 
 <body>
-    <div style="right: 50%; bottom: 50%; transform: translate(50%, 50%); position: absolute; width:750px;">
+    <div class="box">
         <div style="display: flex;">
             <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
@@ -37,66 +38,77 @@
                 <input type="text" name="q" placeholder="hoogle" autofocus />
             </form>
         </div>
-        <p style="color: var(--aurora1);">
-            (<a target="_blank" href="http://cjurl.me/empire-board">jira</a>)
-            (<a target="_blank" href="http://cjurl.me/wipeout">wout</a>)
-            (<a target="_blank" href="http://cjurl.me/audit">audt</a>)
-            (<a target="_blank" href="http://cjurl.me/empire-gitlab">glab</a>)
-            (<a target="_blank" href="http://cjurl.me/empire-jenkins">jnks</a>)
-            (<a target="_blank" href="http://cjurl.me/pagerduty">pdty</a>)
-            (<a target="_blank" href="https://outlook.office365.com/">omail</a>)
-        </p>
-        <p style="color: var(--aurora2)">
-            (<a target="_blank" href="https://reddit.com/">rdit</a>)
-            (<a target="_blank" href="https://youtube.com">yt</a>)
-            (<a target="_blank" href="https://feedly.com/i/my">rss</a>)
-            (<a target="_blank" href="https://curiositystream.com/">cur</a>)
-            (<a target="_blank" href="https://www.netflix.com/">ntfx</a>)
-            (<a target="_blank" href="https://www.coursera.org/">crsa</a>)
-            (<a target="_blank" href="https://www.hackerrank.com/domains">hrnk</a>)
-            (<a target="_blank" href="https://exercism.io/">xrsm</a>)
-        </p>
-        <p style="color: var(--aurora3)">
-            (<a target="_blank" href="http://cjurl.me/empire-burn">burn</a>)
-            (<a target="_blank" href="http://cjurl.me/timesheet">time</a>)
-            (<a target="_blank" href="http://cjurl.me/lionbox">box</a>)
-            (<a target="_blank" href="http://cjurl.me/publicis-support">sup</a>)
-            (<a target="_blank" href="http://cjurl.me/empire">wiki</a>)
-        </p>
-        <p style="color: var(--aurora4)">
-            (<a target="_blank" href="https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html">cdk</a>)
-            (<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">js</a>)
-            (<a target="_blank" href="https://www.scala-lang.org/api/2.13.3/">scala</a>)
-            (<a target="_blank" href="https://hoogle.haskell.org/">hs</a>)
-            (<a target="_blank" href="https://www.rust-lang.org/learn">rs</a>)
-            (<a target="_blank" href="https://golang.org/doc/">go</a>)
-            (<a target="_blank" href="https://www.python.org/doc/">py</a>)
-            (<a target="_blank" href="https://www.clojure.org/guides/getting_started">clj</a>)
-        </p>
-        <p style="color: var(--aurora5)">
-            (<a target="_blank" href="https://gmail.com">mail</a>)
-            (<a target="_blank" href="https://drive.google.com/drive/my-drive">gdrv</a>)
-            (<a target="_blank" href="https://mega.nz/">mega</a>)
-            (<a target="_blank" href="https://github.com/">hub</a>)
-            (<a target="_blank" href="https://www.amazon.com/">amaz</a>)
-            (<a target="_blank" href="https://www.khanacademy.org/">khan</a>)
-            (<a target="_blank" href="https://account.microsoft.com/family/">m-fam</a>)
-        </p>
-        <p style="color: var(--aurora1)">
-
-        </p>
-
+        <div class="categories">
+            <p class="cat">manage</p>
+            <p class="cat">fintech</p>
+            <p class="cat">education</p>
+            <p class="cat">develop</p>
+            <p class="cat">personal</p>
+            <p class="cat">entertain</p>
+        </div>
+        <div class="items">
+            <p style="color: var(--aurora3)">
+                [<a target="_blank" href="https://outlook.office365.com/">mail</a>]
+                [<a target="_blank" href="http://cjurl.me/empire-burn">burn</a>]
+                [<a target="_blank" href="http://cjurl.me/timesheet">time</a>]
+                [<a target="_blank" href="http://cjurl.me/lionbox">box</a>]
+                [<a target="_blank" href="http://cjurl.me/publicis-support">sup</a>]
+            </p>
+            <p style="color: var(--aurora1);">
+                [<a target="_blank" href="http://cjurl.me/empire-board">jira</a>]
+                [<a target="_blank" href="http://cjurl.me/wipeout">wout</a>]
+                [<a target="_blank" href="http://cjurl.me/audit">audt</a>]
+                [<a target="_blank" href="http://cjurl.me/empire-gitlab">glab</a>]
+                [<a target="_blank" href="http://cjurl.me/empire-jenkins">jnks</a>]
+                [<a target="_blank" href="http://cjurl.me/pagerduty">pdty</a>]
+            </p>
+            <p style="color: var(--aurora2)">
+                [<a target="_blank" href="https://reddit.com/">rdit</a>]
+                [<a target="_blank" href="https://youtube.com">yt</a>]
+                [<a target="_blank" href="https://feedly.com/i/my">rss</a>]
+                [<a target="_blank" href="https://www.coursera.org/">crsa</a>]
+                [<a target="_blank" href="https://www.hackerrank.com/domains">hrnk</a>]
+                [<a target="_blank" href="https://exercism.io/">xrsm</a>]
+            </p>
+            <p style="color: var(--aurora4)">
+                [<a target="_blank" href="https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html">cdk</a>]
+                [<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">js</a>]
+                [<a target="_blank" href="https://www.scala-lang.org/api/2.13.3/">scala</a>]
+                [<a target="_blank" href="https://hoogle.haskell.org/">hs</a>]
+                [<a target="_blank" href="https://www.rust-lang.org/learn">rs</a>]
+                [<a target="_blank" href="https://golang.org/doc/">go</a>]
+                [<a target="_blank" href="https://www.python.org/doc/">py</a>]
+                [<a target="_blank" href="https://www.clojure.org/guides/getting_started">clj</a>]
+            </p>
+            <p style="color: var(--aurora5)">
+                [<a target="_blank" href="https://gmail.com">mail</a>]
+                [<a target="_blank" href="https://drive.google.com/drive/my-drive">gdrv</a>]
+                [<a target="_blank" href="https://mega.nz/">mega</a>]
+                [<a target="_blank" href="https://github.com/">hub</a>]
+                [<a target="_blank" href="https://www.amazon.com/">amaz</a>]
+                [<a target="_blank" href="https://www.khanacademy.org/">khan</a>]
+                [<a target="_blank" href="https://account.microsoft.com/family/">m-fam</a>]
+            </p>
+            <p style="color: var(--aurora4)">
+                [<a target="_blank" href="https://www.netflix.com/">netflix</a>]
+                [<a target="_blank" href="https://www.espn.com/watch/espnplus/">espn</a>]
+                [<a target="_blank" href="https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1">prime</a>]
+                [<a target="_blank" href="https://curiositystream.com/">cur</a>]
+                [<a target="_blank" href="https://www.disneyplus.com/home">disney</a>]
+            </p>
+        </div>
     </div>
 </body>
 </html>
 <style type="text/css" media="screen">
     * {
         font-size: 22px;
-        font-family: monospace;
+        font-family: 'Iosevka', monospace;
     }
 
     html {
-        background-color: var(--polar1);
+        background-color: var(--background);
+        color: var(--foreground);
     }
 
     a { text-decoration: none; }
@@ -106,10 +118,34 @@
     input {
         border: none;
         background: none;
-        color: var(--polar4);
+        color: var(--snow3);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--frost4);
     }
     input:focus {
         outline: none;
+    }
+
+    .box {
+        width: 850px;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        position: absolute;
+    }
+    .categories {
+        float: left;
+        margin: 0;
+        width: 20%;
+        text-align: left;
+    }
+
+    .items {
+        float: left;
+        margin: 0;
+        width: 80%;
+        text-align: left;
     }
 
     /* Nord Color Scheme */
@@ -130,6 +166,8 @@
         --aurora3: #EBCB8B;
         --aurora4: #A3BE8C;
         --aurora5: #B48EAD;
+        --background: #263238;
+        --foreground: #eeffff;
     }
 
 </style>
