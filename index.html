@@ -4,48 +4,55 @@
     <!-- influenced by: https://github.com/JLErvin/startpage -->
     <link rel="shortcut icon" type="image/jpg" href="favicon.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b1825818d.js" crossorigin="anonymous"></script>
     <title>home</title>
 </head>
 
 <body>
     <div class="box">
         <div style="display: flex;">
+            <i class="fas fa-stopwatch">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="startpage" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
+            <i class="fab fa-google">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="google" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
+            <i class="fab fa-stack-overflow">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action=" https://stackoverflow.com/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="stackover" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
         </div>
         <BR/>
         <div style="display: flex;">
+            <i class="fab fa-js-square">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="mdn" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
+            <i class="fas fa-angle-double-down">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action="https://www.scala-lang.org/api/current/index.html?search="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="scala" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
+            <i class="fas fa-angle-double-right">&nbsp</i>
             <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
                 onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="hoogle" autofocus />
+                <input type="text" name="q" placeholder="______________" autofocus />
             </form>
         </div>
         <div class="categories">
-            <p class="cat">work</p>
-            <p class="cat">|</p>
-            <p class="cat">ref</p>
-            <p class="cat">|</p>
-            <p class="cat">jeff</p>
-            <p class="cat">|</p>
-            <p class="cat">|</p>
+            <p class="cat"><i class="fas fa-briefcase"></i></p>
+            <p class="cat">&nbsp</p>
+            <p class="cat"><i class="fas fa-atlas"></i></p>
+            <p class="cat">&nbsp</p>
+            <p class="cat"><i class="fas fa-user-astronaut"></i></p>
+            <p class="cat">&nbsp</p>
+            <p class="cat">&nbsp</p>
         </div>
         <div class="items">
             <p style="color: var(--aurora1)">
@@ -87,18 +94,18 @@
                 [<a target="_blank" href="https://mega.nz/">mega</a>]
                 [<a target="_blank" href="https://github.com/">ghub</a>]
                 [<a target="_blank" href="https://www.amazon.com/">amaz</a>]
-                [<a target="_blank" href="https://www.khanacademy.org/">khan</a>]
                 [<a target="_blank" href="https://account.microsoft.com/family/">mfam</a>]
             </p>
             <p style="color: var(--aurora1)">
                 [<a target="_blank" href="https://feedly.com/i/my">feed</a>]
                 [<a target="_blank" href="https://reddit.com/">rdit</a>]
                 [<a target="_blank" href="https://youtube.com">yutb</a>]
+                [<a target="_blank" href="https://www.khanacademy.org/">khan</a>]
             </p>
             <p style="color: var(--aurora2)">
                 [<a target="_blank" href="https://www.netflix.com/">flix</a>]
-                [<a target="_blank" href="https://www.espn.com/watch/espnplus/">espn</a>]
-                [<a target="_blank" href="https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1">prym</a>]
+                [<a target="_blank" href="https://www.hbomax.com/">hbom</a>]
+                [<a target="_blank" href="https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1">prim</a>]
                 [<a target="_blank" href="https://curiositystream.com/">csty</a>]
                 [<a target="_blank" href="https://www.disneyplus.com/home">dsny</a>]
             </p>
@@ -143,8 +150,8 @@
     .categories {
         float: left;
         margin: 0;
-        width: 10%;
-        text-align: left;
+        width: 50px;
+        text-align: center;
     }
 
     .items {
