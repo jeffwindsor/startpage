@@ -5,57 +5,15 @@
     <!-- <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"> -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3b1825818d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
     <title>home</title>
 </head>
 
 <body>
     <div class="box">
-        <div style="display: flex;">
-            <i class="fab fa-google">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-            <i class="fas fa-stopwatch">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action="https://www.startpage.com/sp/search"
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-            <i class="fab fa-stack-overflow">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action=" https://stackoverflow.com/search?q="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-        </div>
-        <BR/>
-        <div style="display: flex;">
-            <i class="fab fa-js-square">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action="https://developer.mozilla.org/en-US/search?q="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-            <i class="fas balance-scale">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action="https://www.scala-lang.org/api/current/index.html?search="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-            <i class="fas fa-angle-double-right">&nbsp</i>
-            <form class="SearchForm" target="_blank" method="get" action="https://hoogle.haskell.org?hoogle="
-                onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                <input type="text" name="q" placeholder="______________" autofocus />
-            </form>
-        </div>
-        <div class="categories">
-            <p class="cat"><i class="fas fa-briefcase"></i></p>
-            <p class="cat">&nbsp</p>
-            <p class="cat"><i class="fas fa-atlas"></i></p>
-            <p class="cat">&nbsp</p>
-            <p class="cat"><i class="fas fa-user-astronaut"></i></p>
-            <p class="cat">&nbsp</p>
-            <p class="cat">&nbsp</p>
-        </div>
         <div class="items">
+            <p class="subtitle">&nbsp;start&nbsp;page</p>
+            <br>
             <p style="color: var(--aurora1)">
                 [<a target="_blank" href="http://cjurl.me/empire-jira">jira</a>]
                 [<a target="_blank" href="http://cjurl.me/empire-burn">burn</a>]
@@ -89,8 +47,6 @@
                 [<a target="_blank" href="https://hoogle.haskell.org/">hskl</a>]
                 [<a target="_blank" href="https://www.rust-lang.org/learn">rust</a>]
                 [<a target="_blank" href="https://golang.org/doc/">golg</a>]
-                <!-- [<a target="_blank" href="https://www.python.org/doc/">pyth</a>] -->
-                <!-- [<a target="_blank" href="https://www.clojure.org/guides/getting_started">cloj</a>] -->
             </p>
             <p style="color: var(--aurora5)">
                 [<a target="_blank" href="https://www.myfitnesspal.com/">mfit</a>]
@@ -119,10 +75,12 @@
     </div>
 </body>
 </html>
+
 <style type="text/css" media="screen">
     * {
-        font-size: 22px;
-        font-family: monospace;
+        font-size: 16px;
+        font-family: Roboto Mono;
+        text-align: center;
     }
 
     html {
@@ -146,25 +104,31 @@
         outline: none;
     }
 
-    .box {
-        width: 850px;
-        right: 50%;
-        bottom: 50%;
-        transform: translate(50%, 50%);
-        position: absolute;
-    }
-    .categories {
-        float: left;
-        margin: 0;
-        width: 80px;
+    .title {
+        font-family: Montserrat;
+        font-size: 38px;
+        line-height: 0.6;
+        letter-spacing: 21px;
         text-align: center;
+    }
+    .subtitle {
+        font-size: 14px;
+        letter-spacing: 11px;
+        text-align: center;
+    }
+    .box {
+        width: 100%;
+        /* right: 50%; */
+        /* bottom: 50%; */
+        transform: translate(10%, 45%);
+        /* position: absolute; */
     }
 
     .items {
-        float: left;
+        float: center;
         margin: 0;
         width: 80%;
-        text-align: left;
+        text-align: justify;
     }
 
     /* Nord Color Scheme */
@@ -188,5 +152,4 @@
         --background: #263238;
         --foreground: #eeffff;
     }
-
 </style>
