@@ -14,6 +14,12 @@
         <div class="items">
             <br><br>
             <p class="title">start page</p>
+            <p >
+                <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
+                    onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                    <input type="text" name="q" placeholder="google search" autofocus />
+                </form>
+            </p>
             <p style="color: var(--red)">
                 [<a target="_blank" href="http://cjurl.me/empire-jira">jira</a>]
                 [<a target="_blank" href="http://cjurl.me/empire-burn">burn</a>]
@@ -39,7 +45,7 @@
                 [<a target="_blank" href="https://www.rust-lang.org/learn">rust</a>]
                 [<a target="_blank" href="https://golang.org/doc/">go</a>]
             </p>
-            <p style="color: var(--blue)">
+            <p style="color: var(--cyan)">
                 [<a target="_blank" href="https://www.myfitnesspal.com/">myfit</a>]
                 [<a target="_blank" href="https://gmail.com">gmail</a>]
                 [<a target="_blank" href="https://drive.google.com/drive/my-drive">gdrive</a>]
@@ -47,7 +53,7 @@
                 [<a target="_blank" href="https://www.amazon.com/">amazon</a>]
                 [<a target="_blank" href="https://account.microsoft.com/family/">ms-family</a>]
             </p>
-            <p style="color: var(--cyan)">
+            <p style="color: var(--magenta)">
 
                 [<a target="_blank" href="https://feedly.com/i/my">feed</a>]
                 [<a target="_blank" href="https://reddit.com/">reddit</a>]
@@ -55,13 +61,13 @@
                 [<a target="_blank" href="https://www.khanacademy.org/">khan</a>]
                 [<a target="_blank" href="https://learn.cantrill.io/">aws-training</a>]
             </p>
-            <p style="color: var(--magenta)">
+            <p style="color: var(--red)">
                 [<a target="_blank" href="https://www.netflix.com/">netflix</a>]
                 [<a target="_blank" href="https://www.hbomax.com/">hbo-max</a>]
                 [<a target="_blank" href="https://www.amazon.com/Amazon-Video/b/?&node=2858778011&ref=dvm_MLP_ROWNA_US_1">prime</a>]
                 [<a target="_blank" href="https://www.disneyplus.com/home">disney</a>]
             </p>
-            <p style="color: var(--red)">
+            <p style="color: var(--yellow)">
                 [<a target="_blank" href="https://www.coursera.org/">coursera</a>]
                 [<a target="_blank" href="https://www.udemy.com/">udemy</a>]
                 [<a target="_blank" href="https://www.pluralsight.com/">plural-sight</a>]
@@ -88,14 +94,32 @@
     }
 
     a { text-decoration: none; }
+    
     a:link, a:visited { color: var(--gray); }
+
     a:hover { color: inherit; }
+
+    input {
+        width: 50%;
+        /* padding: 12px 20px; */
+        /* margin: 8px 0; */
+        /* box-sizing: border-box; */
+        /* border: 2px solid var(--blue); */
+        border: none;
+        /* border-radius: 4px; */
+        background: none;
+        color: var(--white);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: var(--blue);
+    }
 
     .title {
         font-size: 48px;
         font-family: Telex;
         letter-spacing: 24px;
     }
+
     .box {
         transform: translate(10%, 45%);
     }
