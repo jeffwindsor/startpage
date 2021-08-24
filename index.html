@@ -25,12 +25,13 @@
             <p class="cat" style="color: var(--red)"><i class="fas fa-fingerprint"></i></p>
             <p class="cat" style="color: var(--magenta)"><i class="fas fa-book"></i></p>
             <p class="cat" style="color: var(--cyan)"><i class="fas fa-film"></i></p>
+            <p class="cat" style="color: var(--green)"><i class="fab fa-github"></i></p>
         </div>
         <div class="items">
             <p style="color: var(--cyan)">
                 <form class="SearchForm" target="_blank" method="get" action="https://google.com/search"
                     onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
-                    <input type="text" name="q" placeholder="search" autofocus />
+                    <input type="text" name="q" placeholder="google" autofocus />
                 </form>
             </p>
             <p style="color: var(--green)">
@@ -102,6 +103,12 @@
                 [<a target="_blank" href="https://www.amazon.com/Amazon-Video">prime</a>]
                 [<a target="_blank" href="https://www.disneyplus.com/home">disney</a>]
             </p>
+            <p style="color: var(--green)">
+                <form class="SearchForm" target="_blank" method="get" action="https://github.com/search?q=spacebar"
+                    onsubmit="this.submit(); this.reset(); return false;" autocomplete="off">
+                    <input type="text" name="q" placeholder="github" autofocus />
+                </form>
+            </p>
         </div>
     </div>
 </body>
@@ -160,14 +167,13 @@
 
 
     :root {
-        --black:   #202020;
+        --black:   #282828;
         --red:     #f43753;
         --green:   #c9d05c;
         --yellow:  #ffc24b;
-        --blue:    #b3deef;
-        --magenta: #d3b987;
-        --cyan:    #73cef4;
+        --blue:    #73cef4;
+        --magenta: #ada0d3;
+        --cyan:    #95c4ce;
         --white:   #eeeeee;
-        --gray:    #aaaaaa;
     }
 </style>
