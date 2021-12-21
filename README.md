@@ -1,6 +1,6 @@
 # Nord Startpage
 
-Simple, minimalistic start page styled with the nord theme.
+Simple, minimalistic start page styled with the tender theme.
 
 ![start page preview](preview.png)
 
