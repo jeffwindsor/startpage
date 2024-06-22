@@ -6,7 +6,6 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Telex" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Overpass+Mono" />
     <script src="https://kit.fontawesome.com/34c60acc61.js" crossorigin="anonymous"></script>
     <title>start page</title>
 </head>
@@ -14,7 +13,7 @@
 <body>
     <div class="box">
         <div class="categories">
-            <p class="cat" style="color: var(--four)"><i class="fa-brands fa-google"></i></p>
+            <p class="cat" style="color: var(--blue)"><i class="fa-brands fa-google"></i></p>
         <br>
             <p class="cat" style="color: var(--one)"><i class="fa-solid fa-sack-dollar"></i></p>
             <p class="cat" style="color: var(--two)"><i class="fas fa-business-time"></i></p>
@@ -144,10 +143,12 @@
 
     input[type=text] {
       background: none;
-      border: 1px solid #ccc; 
+      border: 1px solid var(--blue); 
+      border-radius:4px;
       box-sizing: border-box;
       color: var(--white);
       display: inline-block; 
+      padding: 4px 12px; 
       width: 100%; 
     }
 
